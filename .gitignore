@@ -1,0 +1,24 @@
+# Frontend
+**/node_modules/
+**/dist/
+**/.cache/
+**/.env
+**/.env.local
+
+# Backend
+**/.venv/
+**/__pycache__/
+**/uploads/
+**/*.db
+**/*.db-journal
+
+# IDE and OS
+.idea/
+.vscode/
+*.pyc
+.DS_Store
+Thumbs.db
+
+# Cursor / local
+.cursor/
+*.plan.md

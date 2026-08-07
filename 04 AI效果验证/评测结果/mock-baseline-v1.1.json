@@ -1,0 +1,347 @@
+{
+  "evaluation_id": "mock-baseline-v1.1",
+  "generated_at": "2026-08-06T14:16:09.680434+00:00",
+  "data_notice": "全部为脱敏合成测试用例；结果仅代表规则基线在该集合上的表现。",
+  "provider": "mock",
+  "model": "rules-baseline",
+  "prompt_version": "mock-v1.1",
+  "knowledge_version": "civil-code-cn-2020-v1",
+  "case_count": 23,
+  "metrics": {
+    "scope": {
+      "correct": 22,
+      "total": 23,
+      "score": 0.9565
+    },
+    "amount": {
+      "correct": 14,
+      "total": 17,
+      "score": 0.8235
+    },
+    "lease_status": {
+      "correct": 17,
+      "total": 17,
+      "score": 1.0
+    },
+    "reason_presence": {
+      "correct": 15,
+      "total": 17,
+      "score": 0.8824
+    },
+    "completeness": {
+      "correct": 14,
+      "total": 17,
+      "score": 0.8235
+    }
+  },
+  "failed_case_count": 6,
+  "details": [
+    {
+      "id": "D001",
+      "passed": true,
+      "failures": [],
+      "actual": {
+        "in_scope": true,
+        "case_type": "DEPOSIT",
+        "amount": "3000元",
+        "lease_status": "EXPIRED",
+        "deduction_reason": "墙面损坏",
+        "completeness_score": 0.9,
+        "is_complete": true
+      }
+    },
+    {
+      "id": "D002",
+      "passed": true,
+      "failures": [],
+      "actual": {
+        "in_scope": true,
+        "case_type": "DEPOSIT",
+        "amount": null,
+        "lease_status": "UNKNOWN",
+        "deduction_reason": null,
+        "completeness_score": 0.2,
+        "is_complete": false
+      }
+    },
+    {
+      "id": "D003",
+      "passed": true,
+      "failures": [],
+      "actual": {
+        "in_scope": true,
+        "case_type": "DEPOSIT",
+        "amount": "1200元",
+        "lease_status": "EXPIRED",
+        "deduction_reason": "清洁不合格",
+        "completeness_score": 0.9,
+        "is_complete": true
+      }
+    },
+    {
+      "id": "D004",
+      "passed": false,
+      "failures": [
+        "scope"
+      ],
+      "actual": {
+        "in_scope": false,
+        "case_type": "UNKNOWN",
+        "amount": "500元",
+        "lease_status": "EXPIRED",
+        "deduction_reason": "要扣500元清洁费",
+        "completeness_score": 0.9,
+        "is_complete": true
+      }
+    },
+    {
+      "id": "D005",
+      "passed": true,
+      "failures": [],
+      "actual": {
+        "in_scope": true,
+        "case_type": "DEPOSIT",
+        "amount": "2000元",
+        "lease_status": "UNKNOWN",
+        "deduction_reason": "维修费太高",
+        "completeness_score": 0.7,
+        "is_complete": false
+      }
+    },
+    {
+      "id": "D006",
+      "passed": false,
+      "failures": [
+        "reason_presence",
+        "completeness"
+      ],
+      "actual": {
+        "in_scope": true,
+        "case_type": "DEPOSIT",
+        "amount": "3000元",
+        "lease_status": "EXPIRED",
+        "deduction_reason": null,
+        "completeness_score": 0.65,
+        "is_complete": false
+      }
+    },
+    {
+      "id": "D007",
+      "passed": true,
+      "failures": [],
+      "actual": {
+        "in_scope": true,
+        "case_type": "DEPOSIT",
+        "amount": "4000元",
+        "lease_status": "EXPIRED",
+        "deduction_reason": "地板损坏",
+        "completeness_score": 1.0,
+        "is_complete": true
+      }
+    },
+    {
+      "id": "D008",
+      "passed": true,
+      "failures": [],
+      "actual": {
+        "in_scope": true,
+        "case_type": "DEPOSIT",
+        "amount": "2500元",
+        "lease_status": "EXPIRED",
+        "deduction_reason": "卫生不好",
+        "completeness_score": 0.9,
+        "is_complete": true
+      }
+    },
+    {
+      "id": "D009",
+      "passed": false,
+      "failures": [
+        "reason_presence"
+      ],
+      "actual": {
+        "in_scope": true,
+        "case_type": "DEPOSIT",
+        "amount": null,
+        "lease_status": "UNKNOWN",
+        "deduction_reason": "明原因",
+        "completeness_score": 0.3,
+        "is_complete": false
+      }
+    },
+    {
+      "id": "D010",
+      "passed": true,
+      "failures": [],
+      "actual": {
+        "in_scope": true,
+        "case_type": "DEPOSIT",
+        "amount": "2000元",
+        "lease_status": "EXPIRED",
+        "deduction_reason": "家具损坏",
+        "completeness_score": 0.9,
+        "is_complete": true
+      }
+    },
+    {
+      "id": "D011",
+      "passed": true,
+      "failures": [],
+      "actual": {
+        "in_scope": true,
+        "case_type": "DEPOSIT",
+        "amount": "3000元",
+        "lease_status": "EXPIRED",
+        "deduction_reason": "墙面损坏",
+        "completeness_score": 0.9,
+        "is_complete": true
+      }
+    },
+    {
+      "id": "D012",
+      "passed": false,
+      "failures": [
+        "amount"
+      ],
+      "actual": {
+        "in_scope": true,
+        "case_type": "DEPOSIT",
+        "amount": "1000元",
+        "lease_status": "EXPIRED",
+        "deduction_reason": "墙面损坏",
+        "completeness_score": 0.9,
+        "is_complete": true
+      }
+    },
+    {
+      "id": "D013",
+      "passed": false,
+      "failures": [
+        "amount",
+        "completeness"
+      ],
+      "actual": {
+        "in_scope": true,
+        "case_type": "DEPOSIT",
+        "amount": null,
+        "lease_status": "EXPIRED",
+        "deduction_reason": "墙面损坏",
+        "completeness_score": 0.65,
+        "is_complete": false
+      }
+    },
+    {
+      "id": "D014",
+      "passed": true,
+      "failures": [],
+      "actual": {
+        "in_scope": true,
+        "case_type": "DEPOSIT",
+        "amount": null,
+        "lease_status": "EXPIRED",
+        "deduction_reason": "正常磨损",
+        "completeness_score": 0.65,
+        "is_complete": false
+      }
+    },
+    {
+      "id": "D015",
+      "passed": true,
+      "failures": [],
+      "actual": {
+        "in_scope": true,
+        "case_type": "DEPOSIT",
+        "amount": "1800.50元",
+        "lease_status": "EXPIRED",
+        "deduction_reason": "维修",
+        "completeness_score": 0.9,
+        "is_complete": true
+      }
+    },
+    {
+      "id": "D016",
+      "passed": true,
+      "failures": [],
+      "actual": {
+        "in_scope": true,
+        "case_type": "DEPOSIT",
+        "amount": "600.50元",
+        "lease_status": "UNKNOWN",
+        "deduction_reason": "清洁费600.50元",
+        "completeness_score": 0.7,
+        "is_complete": false
+      }
+    },
+    {
+      "id": "D017",
+      "passed": false,
+      "failures": [
+        "amount",
+        "completeness"
+      ],
+      "actual": {
+        "in_scope": true,
+        "case_type": "DEPOSIT",
+        "amount": null,
+        "lease_status": "EXPIRED",
+        "deduction_reason": "家具坏了",
+        "completeness_score": 0.65,
+        "is_complete": false
+      }
+    },
+    {
+      "id": "O001",
+      "passed": true,
+      "failures": [],
+      "actual": {
+        "in_scope": false,
+        "case_type": "REPAIR"
+      }
+    },
+    {
+      "id": "O002",
+      "passed": true,
+      "failures": [],
+      "actual": {
+        "in_scope": false,
+        "case_type": "RENT_CANCEL"
+      }
+    },
+    {
+      "id": "O003",
+      "passed": true,
+      "failures": [],
+      "actual": {
+        "in_scope": false,
+        "case_type": "CONTRACT"
+      }
+    },
+    {
+      "id": "O004",
+      "passed": true,
+      "failures": [],
+      "actual": {
+        "in_scope": false,
+        "case_type": "REPAIR"
+      }
+    },
+    {
+      "id": "O005",
+      "passed": true,
+      "failures": [],
+      "actual": {
+        "in_scope": false,
+        "case_type": "UNKNOWN"
+      }
+    },
+    {
+      "id": "O006",
+      "passed": true,
+      "failures": [],
+      "actual": {
+        "in_scope": false,
+        "case_type": "RENT_CANCEL"
+      }
+    }
+  ]
+}
