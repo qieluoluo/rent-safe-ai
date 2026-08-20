@@ -80,17 +80,6 @@ python "04 AI效果验证/evaluate_mock.py"
 - 结果：scope / amount / lease_status / reason / completeness 均为 100%（**仅规则基线**）
 - 详见：[04 AI效果验证/README.md](04%20AI效果验证/README.md)
 
-## 简历表述建议
-
-**可以写：** MVP 定义、六步 Agent 设计、Mock 评测闭环、可演示 Demo
-
-**不要写：** RAG 准确率 XX%、真实大模型已落地、50+ 真实用户案例（与仓库不符）
-
-## 文档入口
-
-- [一页式案例（作品集）](05%20作品集展示/01-项目一页式案例.md)
-- [3 分钟演示脚本](05%20作品集展示/02-演示脚本.md)
-- [能力证据索引](05%20作品集展示/03-能力证据索引.md)
 
 ## License
 
